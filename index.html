@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3; url=https://www.youtube.com/watch?v=UZw7y0-txpI">
+    <title>Mike</title>
+
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f172a,#1e293b);
+            color:white;
+            font-family:Arial,sans-serif;
+            text-align:center;
+        }
+
+        .card{
+            background:rgba(255,255,255,0.08);
+            padding:40px;
+            border-radius:20px;
+            backdrop-filter:blur(10px);
+            box-shadow:0 0 30px rgba(0,0,0,.4);
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .loader{
+            width:50px;
+            height:50px;
+            border:5px solid rgba(255,255,255,.2);
+            border-top:5px solid white;
+            border-radius:50%;
+            margin:20px auto;
+            animation:spin 1s linear infinite;
+        }
+
+        @keyframes spin{
+            from{transform:rotate(0deg);}
+            to{transform:rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Mike</h1>
+        <p>Verificando acceso...</p>
+        <div class="loader"></div>
+        <p>Cargando contenido seguro...</p>
+    </div>
+
+</body>
+</html>
